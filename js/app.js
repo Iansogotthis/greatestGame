@@ -1,8 +1,18 @@
-let totalPieces;
-let piecesType1;
-let piecesTpype2;
+let totalPieces = 24
+const piecesType1 = {
+    color: "red",
+    total: 12
+}
+let piecesType2 = {
+    color: "black",
+    total: 12
+}
+const types = ["red" , "black"]
 let collectionDisplay = {}
 
+
+const redSquareEl = document.getElementById("red")
+const blackSquareEls = document.getElementById("black")
 
 const players ={
     constructor(name, pieceCount, pieceType, currentPiece, collection){
